@@ -1,0 +1,8 @@
+Scenario: A vet object is serialized and deserialized
+  Given a vet whose first name is Zaphod
+  And the last name is Beeblebrox
+  And the id is 123
+  When vet is serialized and then deserialized
+  Then the first name should be Zaphod 
+  And the last name should be Beeblebrox
+  And the id should be 123
