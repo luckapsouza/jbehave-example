@@ -42,19 +42,19 @@ public class PetClinicSteps extends Steps {
   }
   
   @Then("the first name should be $firstName")
-  public void vetFirstNameShouldbe() {
-	  assertThat(other.getFirstName()).isEqualTo(vet.getFirstName());
+  public void vetFirstNameShouldbe(String firstName) {
+	  assertThat(other.getFirstName()).isEqualTo(firstName);
 
   }
   
   @Then("the last name should be $lastName")
-  public void vetLastNameShouldbe() {
-	  assertThat(other.getLastName()).isEqualTo(vet.getLastName());
+  public void vetLastNameShouldbe(String lastName) {
+	  assertThat(other.getLastName()).isEqualTo(lastName);
   }
   
   @Then("the id should be $id")
   public void vetIdShouldbe(Integer id) {
-	  assertThat(other.getId()).isEqualTo(vet.getId());
+	  assertThat(other.getId()).isEqualTo(id);
   }
 
 }
